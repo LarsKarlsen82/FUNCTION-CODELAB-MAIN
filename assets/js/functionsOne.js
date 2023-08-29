@@ -7,3 +7,6 @@ function helloWorld() {
 
     console.info(helloWorld);
 }
+
+let hello = () => {return "Hello World!"}
+console.info(hello())
