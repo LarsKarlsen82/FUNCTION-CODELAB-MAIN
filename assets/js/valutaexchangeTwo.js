@@ -38,10 +38,20 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 }
 
-/* skriv din kode herunder.
+function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
+    let myDollars = calculateExchange(myDanishAmount, myDollarRate);
+    let myEuros = calculateExchange(myDanishAmount, myEuroRate);
 
+    showResult(myEuros, myDollars, myDanishAmount);
+}
 
+    
 
+function calculateExchange(danishValue,myExchange){
+    console.info("test");
+    let myResult=danishValue / myExchange;
+    return myResult;
 
+}
 
 
